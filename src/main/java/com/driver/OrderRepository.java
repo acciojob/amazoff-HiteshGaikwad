@@ -14,6 +14,9 @@ public class OrderRepository {
     private HashMap<String, List<String>> orderToDeliveryPartner;
     private HashMap<String, List<String>> partnerIdTimeMap;
 
+    public OrderRepository() {
+    }
+
     public OrderRepository(HashMap<String, Order> orderMap, HashMap<String, DeliveryPartner> deliveryPartnerMap, HashMap<String, List<String>> orderToDeliveryPartner, HashMap<String, List<String>> partnerIdTimeMap) {
         this.orderMap = orderMap;
         this.deliveryPartnerMap = deliveryPartnerMap;
